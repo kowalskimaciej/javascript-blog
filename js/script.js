@@ -1,6 +1,7 @@
 const { active } = require("browser-sync");
 
 const titleClickHandler = function(event){
+      event.preventDefault(); // adres nadal się zmienia
       const clickedElement = this;
       console.log('Link was clicked!');
     
