@@ -152,7 +152,7 @@ function generateTags(){
       html += linkHTML + ' ';
       console.log(html);
 
-    /* END LOOP: for each tag */
+      /* END LOOP: for each tag */
 
     }
 
@@ -196,7 +196,7 @@ function tagClickHandler(event){
 
     activeTag.classList.remove('active');
 
-  /* END LOOP: for each active tag link */
+    /* END LOOP: for each active tag link */
 
   }
 
@@ -242,31 +242,31 @@ addClickListenersToTags();
 
 function generateAuthors(){
 
-/* find all articles */
+  /* find all articles */
 
   const articles=document.querySelectorAll(optArticleSelector);
 
-/* START LOOP: for every article */
+  /* START LOOP: for every article */
 
   for(let article of articles){
 
-/* find author wrapper */
+    /* find author wrapper */
 
     const authorWrapper = article.querySelector(optArticleAuthorSelector);
 
-  /* get author from data-author attribute */
+    /* get author from data-author attribute */
 
     const author = article.getAttribute('data-author');
 
-/* generate HTML of the link */
+    /* generate HTML of the link */
 
     const authorLink = '<a href="#author-' + author + '">' + author + '</a>';
 
-/* insert html of the links into the author wrapper */
+    /* insert html of the links into the author wrapper */
 
     authorWrapper.innerHTML=authorLink;
 
-/* END LOOP for every article */ 
+    /* END LOOP for every article */ 
 
   }
 
