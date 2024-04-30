@@ -91,6 +91,8 @@ body {
   }
 }
 
+
+
 /* Authors */
 
 .authors {
@@ -117,4 +119,24 @@ body {
   p {
     margin: 0 10px 0 0;
   }
+}
+
+.list.tags .tag-size-1 {
+  font-size: 100%;
+  color: orange;
+}
+
+.list.tags .tag-size-3 {
+  font-size: 140%;
+  color: blueviolet;
+}
+
+.list.tags .tag-size-5 {
+  font-size: 180%;
+  color: aquamarine;
+}
+
+.list.tags li {
+  display: inline-block;
+  margin-right: 10px;
 }

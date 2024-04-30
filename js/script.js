@@ -49,7 +49,7 @@ const optArticleSelector = '.post',
   optArticleAuthorSelector = '.post-author',
   optTagsListSelector = '.tags.list',
   optCloudClassCount = 5,
-  optCloudClassPrefix = 'tag-size';
+  optCloudClassPrefix = 'tag-size-';
 
 function generateTitleLinks(){
 
@@ -114,7 +114,7 @@ function calculateTagsParams(tags){
 
   const params = {
     max: 0,
-    min: 999999
+    min: 999999,
   };
   
   for(let tag in tags){
