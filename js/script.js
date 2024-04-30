@@ -246,8 +246,6 @@ function generateTags(){
 
 }
 
-generateTags();
-
 function tagClickHandler(event){
 
   /* prevent default action for this event */
@@ -319,6 +317,8 @@ function addClickListenersToTags() {
     /* END LOOP: for each link */
   }
 }
+
+generateTags();
 
 addClickListenersToTags();
 
