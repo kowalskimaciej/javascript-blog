@@ -51,7 +51,7 @@ const optArticleSelector = '.post',
   optCloudClassCount = 5,
   optCloudClassPrefix = 'tag-size-';
 
-function generateTitleLinks(){
+function generateTitleLinks(customSelector = ''){
 
   /* remove contents of titleList */
 
@@ -64,7 +64,7 @@ function generateTitleLinks(){
 
   /* for each article */
 
-  const articles = document.querySelectorAll(optArticleSelector);
+  const articles = document.querySelectorAll(optArticleSelector + customSelector);
 
   let html = ' ';
 
@@ -151,7 +151,7 @@ function generateTags(){
   /* START LOOP: for every article: */
 
   for(let article of articles){
-    article.addEventListener('click', generateTags);
+    // article.addEventListener('click', generateTags);
     console.log(article);
 
     /* find tags wrapper */
