@@ -104,8 +104,6 @@ function generateTitleLinks(customSelector = ''){
 
 generateTitleLinks();
 
-
-
 // Moduł 6
 
 function calculateTagsParams(tags){
@@ -225,6 +223,7 @@ function generateTags(){
   
   /* [NEW] END LOOP: for each tag in allTags: */
   }
+  
   /*[NEW] add HTML from allTagsHTML to tagList */
 
   tagList.innerHTML = templates.tagCloudLink(allTagsData); //dodanie Handlebars 4/5
@@ -460,4 +459,6 @@ function addClickListenersToAuthors() {
 }
 
 generateAuthors();
+
 addClickListenersToAuthors();
+
